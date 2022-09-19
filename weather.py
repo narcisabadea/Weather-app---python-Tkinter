@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import font
 import requests
 from datetime import datetime
+from configparser import ConfigParser
 
 # Initialise window
 
@@ -11,6 +12,12 @@ root.resizable(0, 0)
 root.title("Python weather app")
 
 city_value = StringVar()
+
+
+def _get_api_key():
+    config = ConfigParser()
+    config.read("secrets.ini")
+    return config["openweather"]["api_key"]
 
 # format to local time
 
@@ -23,7 +30,7 @@ def format_time_to_location(utc):
 
 
 def showWeather():
-    api_key = "71c3533a88a54edfc2aa022b095e54ab"
+    api_key = _get_api_key()
     city_name = city_value.get()
 
     weather_url = 'https://api.openweathermap.org/data/2.5/weather?q=' + \
