@@ -12,4 +12,4 @@ A Graphical User Interface will be displayed which allows the user to enter a ci
 
 ## Screenshot
 
-![Weather](/assets/ss.png?width=375px "Weather app")
+<img src="/assets/ss.png" width="375px" />
