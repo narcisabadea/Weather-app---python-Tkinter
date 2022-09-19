@@ -1,6 +1,6 @@
 # WeatherApp in Python | Tkinter - GUI
 
-A simple WeatherApp created using Python3 and Tkinter package.
+A simple WeatherApp created using `Python3`, `Open Weather Map API` and `Tkinter`.
 
 ## Development
 
