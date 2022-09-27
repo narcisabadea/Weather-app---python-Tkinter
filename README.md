@@ -13,3 +13,7 @@ A Graphical User Interface will be displayed which allows the user to enter a ci
 ## Screenshot
 
 <img src="/assets/ss.png" width="375px" />
+
+
+<!-- Based on the following article:
+https://www.askpython.com/python/examples/gui-weather-app-in-python -->
